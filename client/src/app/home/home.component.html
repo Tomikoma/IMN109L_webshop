@@ -1,4 +1,12 @@
 <div class="content">
-  <p>home works!</p>
+  <h1>Felhasználói adatok</h1>
+  <div *ngIf="user">
+    <p>Email: {{user.email}}</p>
+    <p>Név: {{user.fullName.familyName + ' ' + user.fullName.firstName}}</p>
+    <p>Hozzáférési szint: {{user.accesLevel}}</p>
+  </div>
+  <div *ngIf="!user">
+    Adatok betöltése...
+  </div>
 </div>
 
