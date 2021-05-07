@@ -14,4 +14,18 @@ export class AuthService {
       console.log(res);
     })
   }
+
+  login(email: string, password:string) {
+    this.http.post(environment.url + '/user/login', {email,password}).subscribe(msg => {
+      console.log(msg);
+    })
+  }
+
+  logout() {
+    this.http.post(environment.url + '/user/logout', {}).subscribe(msg => {
+      console.log(msg);
+    }, error => {
+      console.log(error.error.message);
+    })
+  }
 }
