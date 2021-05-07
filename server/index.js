@@ -44,7 +44,7 @@ const User = require('./models/user');
 passport.use('local', new localStrategy({usernameField: 'email', passwordField: 'password'},function (email, password, done) {
   User.findOne({ email: email }, function (err, user) {
       if (err) return done('Hiba lekeres soran', null);
-      if (!user) return done('Nincs ilyen felhasználónév', null);
+      if (!user) return done('Nincs ilyen email', null);
       user.comparePasswords(password, function (error, isMatch) {
           if (error) return done(error, false);
           if (!isMatch) return done('Hibas jelszo', false);
