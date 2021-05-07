@@ -1,0 +1,14 @@
+<div class="content">
+  <div *ngIf="product">
+    <img src="{{product.imgUrl}}" alt="{{product.name}}">
+    <p>Név: {{product.name}}</p>
+    <p>Ár: {{product.price}}</p>
+    <p>Típus: {{product.productType}}</p>
+    <p>Garancia: {{product.guarantee}}</p>
+  </div>
+  <div *ngIf="!product">
+    <p>Termék betöltése...</p>
+  </div>
+  <a [routerLink]="['/']">Főoldal</a>
+
+</div>

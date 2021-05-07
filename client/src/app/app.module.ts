@@ -11,6 +11,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HttpReqInterceptor } from './util/http-req.interceptor';
+import { ProductComponent } from './product/product.component';
+import { ProductpageComponent } from './product/productpage/productpage.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { HttpReqInterceptor } from './util/http-req.interceptor';
     LoginComponent,
     ErrorComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    ProductComponent,
+    ProductpageComponent
   ],
   imports: [
     BrowserModule,

@@ -4,10 +4,12 @@ import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { ErrorComponent } from './error/error.component';
 import { HomeComponent } from './home/home.component';
+import { ProductpageComponent } from './product/productpage/productpage.component';
 import { AuthGuard } from './util/auth.guard';
 
 const routes: Routes = [
   {path: "", component: HomeComponent, canActivate: [AuthGuard]},
+  {path: "product/:name", component: ProductpageComponent, canActivate: [AuthGuard]},
   {path: "signup", component: SignupComponent},
   {path: "login", component: LoginComponent},
   {path: "**", component: ErrorComponent}
