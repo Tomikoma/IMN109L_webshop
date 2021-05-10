@@ -22,4 +22,8 @@ export class ProductComponent implements OnInit {
     })
   }
 
+  buy(name: string, id: string, price: number){
+    this.productService.buy(name, id, price)
+  }
+
 }

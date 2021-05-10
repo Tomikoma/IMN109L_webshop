@@ -7,4 +7,5 @@
     Termék ára: {{item.price}} Ft
   </p>
   <a [routerLink]="['/product/' + item.name]">Tovább a termék oldalára</a>
+  <button (click)="buy(item.name,item._id,item.price)">Vásárlás</button>
 </div>
