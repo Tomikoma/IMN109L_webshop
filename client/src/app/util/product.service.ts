@@ -27,6 +27,7 @@ export class ProductService {
   }
 
   buy(name: string, id: string, price: number){
+    console.log(environment.springUrl)
     this.http.post(environment.springUrl + '/product/buy',{name,id,price}).subscribe(msg => {
       console.log(msg);
     })
