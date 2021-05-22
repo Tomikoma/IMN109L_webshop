@@ -13,9 +13,9 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>webshop</name>
 	<description>PRF-kotprog</description>
-	<properties>
+	<!-- <properties>
 		<java.version>11</java.version>
-	</properties>
+	</properties> -->
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
