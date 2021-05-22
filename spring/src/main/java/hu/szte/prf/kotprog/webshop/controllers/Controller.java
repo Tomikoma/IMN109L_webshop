@@ -95,7 +95,7 @@ public class Controller {
     }
 
 
-    @CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true")
+    @CrossOrigin(origins = {"http://localhost:4200", "https://imn109l-webshop.herokuapp.com"}, allowCredentials = "true")
     @PostMapping(path="/api/product/buy", produces = "application/json")
     public Map<String,String> buy(@RequestBody Product product){
         try {
