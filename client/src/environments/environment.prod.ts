@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  url: 'TODO'
+  url: 'https://imn109l-webshop.herokuapp.com/api'
 };
