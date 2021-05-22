@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require("path");
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const mongoose = require('mongoose');
@@ -11,7 +12,7 @@ const app = express();
 
 const port = process.env.PORT || 3000;
 
-const dbUrl = 'mongodb+srv://admin:<pw>@cluster0.sb5ut.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const dbUrl = process.env.dbUrl;
 mongoose.connect(dbUrl, {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true});
 
 mongoose.connection.on('connected', () => {
@@ -70,7 +71,15 @@ app.use(passport.session());
 const routes = require('./routes');
 
 
+
+app.use("/",express.static(path.join(__dirname,"client")))
+
+
+
 app.use('/api', routes);
+app.use((req,res,next) => {
+  res.sendFile(path.join(__dirname,"client","index.html"))
+})
 //app.use('/api/product', productRoutes);
 
 
