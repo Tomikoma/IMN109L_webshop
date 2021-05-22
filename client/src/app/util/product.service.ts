@@ -25,9 +25,9 @@ export class ProductService {
       this.productListener.next(product);
     })
   }
-  
+
   buy(name: string, id: string, price: number){
-    this.http.post('http://localhost:8080/api/product/buy',{name,id,price}).subscribe(msg => {
+    this.http.post(environment.springUrl + '/product/buy',{name,id,price}).subscribe(msg => {
       console.log(msg);
     })
   }
