@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "Szabó Tamás",
   "license": "ISC",
@@ -18,5 +19,8 @@
     "mongoose": "^5.12.5",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0"
+  },
+  "engines": {
+    "node": "14.16.0"
   }
 }
