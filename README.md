@@ -32,7 +32,7 @@ Programrendszerek fejlesztése kurzusra készített kötelező program.
 - Inicializáló szkript megírása
 - Termékhez és tranzakcióhoz tartozó repository (szükséges query-kkel együtt) és szervíz implementálása
 - RestController implementálása
-- Angular alkalmazás összekötése Spring-gel (termék vásárlása)
+- Angular alkalmazás összekötése Spring-gel (termék vásárlása, információ lekérése)
 ### 2021.05.22. - Deploy-hoz szükséges módosítások végrehajtása
 - Szerveroldali (nodejs) kód kiegészítése (dbUrl, angular app hostolása)
 - Environment fájl kiegészítése a nodejs és spring szerverhez tartozó eléréssel
