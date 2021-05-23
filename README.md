@@ -77,4 +77,6 @@ https://imn109l-webshop-spring.herokuapp.com  - Spring
 
 ## Képek
 
-![Home](https://github.com/Tomikoma/IMN109L_webshop/blob/main/images/signup.png)
+![Regisztráció](https://github.com/Tomikoma/IMN109L_webshop/blob/main/images/signup.png)
+![Főoldal](https://github.com/Tomikoma/IMN109L_webshop/blob/main/images/home.png)
+![Termékoldal](https://github.com/Tomikoma/IMN109L_webshop/blob/main/images/product.png)
