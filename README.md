@@ -74,3 +74,7 @@ https://imn109l-webshop-spring.herokuapp.com  - Spring
 ## Fejlesztés közben fellépő problémák
 - Az autentikáció megoldása beletelt egy kis időbe, ez egyrészt egy elírásnak volt köszönhető (lemaradt egy / jel a restapi-khoz tartozó route-ok szerver-hez való kapcsoláskok), másrészt nem maradt meg a bejelentkezett állapot (pontosabban az angular app nem küldte vissza, ezt oldotta meg az allowCredentials = true)
 - Heroku-ra való deploy esetén (mint említve volt) felülíródik a connection fájl a postgresql csatlakozáshoz. Egy ideig próbáltam erre megoldást keresni, de végül nem sikerült megoldani.
+
+## Képek
+
+![Home](https://github.com/Tomikoma/IMN109L_webshop/blob/main/images/signup.png)
